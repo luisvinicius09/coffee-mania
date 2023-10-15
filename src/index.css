@@ -1,8 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
+	margin: 0;
+	overscroll-behavior-y: none;
 }
 
 #canvas-container {
 	height: 100vh;
 	width: 100%;
+}
+
+#build-menu {
+	position: absolute;
+	bottom: 6vw;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 10;
 }

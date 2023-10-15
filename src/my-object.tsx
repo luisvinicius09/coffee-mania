@@ -13,7 +13,8 @@ export function MyObject({ position }: { position: THREE.Vector3 }) {
 			Math.sin(t / 3) / 4,
 			0.15 + Math.sin(t / 2) / 8
 		);
-		ref.current.position.y = (0.5 + Math.cos(t / 2)) / 7;
+
+		ref.current.position.y = ((0.5 + Math.cos(t / 2)) / 4) + 0.5;
 	});
 
 	return (
